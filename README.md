@@ -12,6 +12,6 @@
 We ensure a smooth, engaging, and memorable experience for both hosts and participants, making virtual events easier and more interactive.
 
 ### Try It Out:
-Visit our live demo of the **Virtual Event Planner** on [Vercel](https://event-planner-kwhb8diod-mrudulas-projects-5255f6e0.vercel.app/).
+Visit our live demo of the **Virtual Event Planner** on [Vercel](https://event-planner-indol.vercel.app/).
 
 Feel free to contact us for any queries or to get started with your event planning today!
