@@ -4,7 +4,6 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(to right, #fde2e4, #b3e0ea);
-  /* Light pink and light blue gradient */
   color: #333;
 }
 
@@ -96,30 +95,25 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-
 /* Past Experience Section */
 .past-experience {
   padding: 80px 10%;
   text-align: center;
   background: linear-gradient(to right, #d9e4fc, #fde2e4);
-  /* Light Blue to Light Pink */
   color: #333;
   border-radius: 20px;
 }
 
 .experience-content {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 40px;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-items: center;
 }
 
 .experience-image img {
   width: 500px;
-  /* Increased width */
   height: 350px;
-  /* Increased height */
   object-fit: cover;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -144,7 +138,6 @@ body {
   color: #333;
 }
 
-
 .slider-container {
   text-align: center;
   margin: 20px auto;
@@ -159,7 +152,6 @@ body {
 
 .slider-image {
   width: 200px;
-  /* Keep circle size as requested */
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
@@ -173,24 +165,13 @@ body {
   transform: scale(1.05);
 }
 
-/* Reduce space between slides */
 .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 -10px;
-  /* Reduce space between images */
 }
 
-/* Reduce spacing for small screens */
-@media screen and (max-width: 768px) {
-  .swiper-slide {
-    margin: 0 -5px;
-  }
-}
-
-
-/* Booking Section */
 /* Booking Section */
 .booking-section {
   padding: 80px 10%;
@@ -200,9 +181,6 @@ body {
   align-items: center;
   gap: 50px;
 }
-
-
-
 
 .booking-form {
   display: flex;
@@ -216,8 +194,17 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.booking-form input {
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
   width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.booking-form input {
   padding: 12px;
   border: 2px solid #80ced6;
   border-radius: 8px;
@@ -247,17 +234,7 @@ body {
   background: #5aa5b5;
 }
 
-.booking-form input,
-.booking-form select,
-.booking-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-/* Description Section */
+/* Booking Description Section */
 .booking-description {
   flex: 1;
   padding: 30px;
@@ -296,4 +273,71 @@ body {
   text-align: center;
   background: #ffb6c1;
   color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+
+  /* Navbar */
+  .navbar ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Services */
+  .service-item {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  /* Past Experience Section */
+  .experience-content {
+    grid-template-columns: 1fr;
+    /* Stack content for smaller screens */
+  }
+
+  /* Slider Section */
+  .slider-image {
+    width: 150px;
+    /* Reduce size of the images */
+    height: 150px;
+  }
+
+  /* Booking Section */
+  .booking-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Booking Form */
+  .booking-form {
+    max-width: 100%;
+  }
+
+  /* Contact Section */
+  .contact {
+    padding: 40px 5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .services h2 {
+    font-size: 24px;
+  }
+
+  .booking-description h2 {
+    font-size: 20px;
+  }
+
+  .booking-description p {
+    font-size: 14px;
+  }
 }
