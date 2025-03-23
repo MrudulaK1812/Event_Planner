@@ -44,7 +44,7 @@ function BookingForm() {
 
             <div className="booking-description">
                 <h2>Why Book a Consultation?</h2>
-                <p>Our experts are here to help you plan your perfect event. Whether it's a wedding, corporate event, or private gathering, we offer personalized advice to ensure a memorable experience.</p>
+                <p>Our experts are here to help you plan your perfect event. Whether it's a corporate event, or webinar, we offer personalized advice to ensure a memorable experience.</p>
                 <p>Get in touch with us today and let's make your vision a reality!</p>
             </div>
         </section>
