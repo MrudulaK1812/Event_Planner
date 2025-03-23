@@ -1,5 +1,4 @@
 import React from "react";
-import corporateImage from "../assets/corporate.jpeg"; // Correct import
 
 function PastExperience() {
     return (
@@ -8,7 +7,8 @@ function PastExperience() {
             <div className="experience-content">
                 {/* Image Section */}
                 <div className="experience-image">
-                    <img src={corporateImage} alt="Past Events" />
+                    {/* Image path from the public/assets folder */}
+                    <img src="/assets/corporate.jpeg" alt="Past Events" />
                 </div>
 
                 {/* Text Content */}
